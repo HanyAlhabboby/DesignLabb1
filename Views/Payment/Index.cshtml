@@ -1,0 +1,14 @@
+﻿<form asp-action="ProcessPayment" method="post">
+    <div>
+        <label for="paymentType">Payment type</label>
+        <select id="paymentType" name="paymentType">
+            <option value="CreditCard">Credit Card</option>
+            <option value="PayPal">Paypal</option>
+        </select>
+    </div>
+    <div>
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" step="100" />
+    </div>
+    <button type="submit">Process your payment</button>
+</form>
